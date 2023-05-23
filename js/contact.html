@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Page conctact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Page conctact</title>
 </head>
+
 <body>
-    <ul class="navbar">
-    
-        <li class="navbar-item"><a href="index.html">Accueil</a></li>
-        <li class="navbar-item"><a href="contact.html">Contact</a></li>
-        <li class="navbar-item"><a href="tableau.html">Tableau</a></li>
-      </ul>
-      <img src="../img/jarditou_logo.jpg" alt="image" height="100" width="300">
-                      <p>La qualité depuis 70 ans</p>
-      <div class="container">
-      <img src="../img/promotion.jpg" alt="Petite promotion" class="center-image" >
-      </div>
-      <H1>Conctact</H1>
-      <hr>
-      <p>* Ces zones sont obligatoires</p>
-      <p>Vos coordonnées</p>
-  <form method="POST" action="http://bienvu.net/script.php">
+  <ul class="navbar">
+
+    <li class="navbar-item"><a href="index.html">Accueil</a></li>
+    <li class="navbar-item"><a href="contact.html">Contact</a></li>
+    <li class="navbar-item"><a href="tableau.html">Tableau</a></li>
+  </ul>
+  <img src="../img/jarditou_logo.jpg" alt="image" height="100" width="300">
+  <p>La qualité depuis 70 ans</p>
+  <div class="container">
+    <img src="../img/promotion.jpg" alt="Petite promotion" class="center-image">
+  </div>
+  <H1>Conctact</H1>
+  <hr>
+  <p>* Ces zones sont obligatoires</p>
+  <p>Vos coordonnées</p>
+  <form method="GET" action="http://bienvu.net/script.php">
     <div>
       <label for="nom">Votre nom* :</label>
       <input type="text" id="nom" name="nom" required>
@@ -58,47 +60,48 @@
       <input type="text" id="ville" name="ville">
     </div>
     <div>
+
       <label for="email">Email* :</label>
       <input type="email" id="email" name="email" required>
     </div>
     <br>
-      <p>Votre demande</p>
-     
-       <!-- La différence entre GET et POST est que l'URL change pour GET il prend les données que nous inscrivons dans le formulaire
+    <p>Votre demande</p>
+
+    <!-- La différence entre GET et POST est que l'URL change pour GET il prend les données que nous inscrivons dans le formulaire
       et pour POST il ne prend en compte que le site où l'on va. -->
-      </form>
-        <form method="POST" action="http://bienvu.net/script.php">
-          <div>
-            <label for="sujet">Sujet* :</label>
-            <select id="sujet" name="sujet" required>
-              <option value="">Veuillez sélectionner un sujet</option>
-              <option value="commandes">Mes commandes</option>
-              <option value="question_produit">Question sur un produit</option>
-              <option value="reclamation">Réclamation</option>
-              <option value="autres">Autres</option>
-            </select>
-          </div>
-          <div>
-            <label for="question">Votre question :</label>
-            <textarea id="question" name="question"></textarea>
-          </div>
-          </form>
-          <form method="POST" action="http://bienvu.net/script.php">
-            <div>
-              <label for="traitement_informatique">J'accepte le traitement informatique de ce formulaire *:</label>
-              <input type="checkbox" id="traitement_informatique" name="traitement_informatique" required>
-            </div>
-            <div>
-              <input type="submit" value="Envoyer">
-              <input type="button" value="Annuler">
-            </div>
-          </form>
-  
+    <div>
+      <label for="sujet">Sujet* :</label>
+      <select id="sujet" name="sujet" required>
+        <option value="">Veuillez sélectionner un sujet</option>
+        <option value="commandes">Mes commandes</option>
+        <option value="question_produit">Question sur un produit</option>
+        <option value="reclamation">Réclamation</option>
+        <option value="autres">Autres</option>
+      </select>
+    </div>
+    <div>
+      <label for="question">Votre question :</label>
+      <textarea id="question" name="question"></textarea>
+    </div>
+
+  <div>
+    <label for="traitement_informatique">J'accepte le traitement informatique de ce formulaire *:</label>
+    <input type="checkbox" id="traitement_informatique" name="traitement_informatique" required>
+  </div>
+  <div>
+    <input type="submit" value="Envoyer">
+    <input type="button" value="Annuler">
+  </div>
+</form>
+
   <hr>
-  <ol type ="disc">
+
+  <ol class="disc-list">
     <li>Mentions légal</li>
     <li>Horaires</li>
     <li>Plan du site</li>
   </ol>
+
 </body>
+
 </html>
