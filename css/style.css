@@ -4,7 +4,7 @@ ul.navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: white;
 }
 
 li.navbar-item {
@@ -13,12 +13,14 @@ li.navbar-item {
 
 li.navbar-item a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: underline;
+  text-decoration: none;
 }
-
+li.navbar-item a:hover {
+  background-color: #ddd;
+}
 
 .container {
   position: relative;
@@ -34,41 +36,8 @@ li.navbar-item a {
   max-height: 100%;
 
 }
-
 .disc-list {
   list-style-type: disc;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
 }
 
-li.disc-list-item {
-  float: left;
-  display: block;
-  color: white;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: underline;
-}
 
-img {
-    max-width: 50%;
-    height: auto;
-}
-
-@media screen and (max-width: 768px) 
-{ 
-    h1 
-    { 
-        font-size : 40px; 
-    } 
-}    
-
-@media screen and (max-width: 768px) 
-{ 
-    h2
-    { 
-        font-size : 30px; 
-    } 
-}    
